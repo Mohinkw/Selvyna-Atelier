@@ -1,14 +1,141 @@
 ﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selvyna Atelier</title>
+  <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
+  <title>Why Choose Selvyna Atelier</title>
   <link href="style.css" rel="stylesheet">
+  <style>
+    .why-hero {
+      background: #ffffff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .why-hero h1 {
+      color: #6e0a1e;
+      font-size: 40px;
+      margin-bottom: 14px;
+    }
+    .why-hero p {
+      color: #555;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+    .benefit-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+    .benefit-card h3 {
+      margin: 0 0 8px 0;
+      color: #6e0a1e;
+      font-size: 18px;
+    }
+    .benefit-card p {
+      margin: 0;
+      color: #444;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .number-tile {
+      background: #2e3440;
+      color: #fff;
+      border-radius: 6px;
+      padding: 18px;
+      text-align: center;
+    }
+    .number-tile h3 {
+      margin: 0 0 6px 0;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .number-tile p {
+      margin: 0;
+      color: #e6e6e6;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px 24px;
+    }
+    .steps-list li {
+      position: relative;
+      padding-left: 22px;
+      color: #444;
+      line-height: 1.5;
+    }
+    .steps-list li::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2e3440;
+      font-size: 11px;
+    }
+    .cta-box {
+      background: #6e0a1e;
+      color: #fff;
+      padding: 28px 24px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 32px;
+    }
+    .cta-box h3 {
+      margin: 0 0 10px 0;
+      font-size: 22px;
+    }
+    .cta-box p {
+      margin: 0 0 16px 0;
+      line-height: 1.6;
+      color: #f6f6f6;
+    }
+    .cta-box a {
+      display: inline-block;
+      background: #ffffff;
+      color: #6e0a1e;
+      padding: 12px 22px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .cta-box a:hover { background: #f3f3f3; transform: translateY(-2px); }
+    @media (max-width: 1024px) {
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+      .numbers-grid { grid-template-columns: 1fr 1fr; }
+      .why-hero { padding: 60px 18px; }
+    }
+  </style>
 </head>
-
-<body style="background-color: #ffffff;">
+<body>
   <header>
     <div class="sitename">
       <img src="images/Logo.png" alt="Selvyna Atelier" class="logo">
@@ -22,25 +149,117 @@
     <div class="menu" id="nav-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="https://selvynaatelier.com/catalog">Catalog</a></li>
-        <li><a href="https://selvynaatelier.com/contact-us">Contact Us</a></li>
-        <li><a href="https://selvynaatelier.com/blogs">Blogs</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
       </ul>
     </div>
   </header>
 
+  <section class="why-hero">
+    <h1>Why Choose Selvyna Atelier</h1>
+    <p>
+      We combine design expertise, compliant production, and agile logistics so your collections reach customers faster—with factory-direct pricing and dependable quality control.
+    </p>
+  </section>
 
+  <section class="services-section">
+    <div class="section-container">
+      <div class="content-left">
+        <h2 class="section-title">What Sets Us Apart</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>Design Partnership</h3>
+            <p>We translate mood boards into production-ready tech packs, patterns, and fits tailored to your market.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Low MOQ, High Care</h3>
+            <p>Small runs for launches and capsules, with the same QC rigor as enterprise volumes.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Fabric & Trim Sourcing</h3>
+            <p>Trusted mills and trim partners for knits, wovens, denim, and performance fabrics with testing support.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Ethical & Compliant</h3>
+            <p>Audited facilities, worker welfare programs, and needle/metal detection policies for safe production.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Amazon FBA Ready</h3>
+            <p>Carton marking, barcoding, polybag warnings, and prep that meets marketplace requirements.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Clear Timelines</h3>
+            <p>Milestone-based schedules from design lock to PP sample, inline QC, and shipment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <img src="images/whychooseus.png" alt="Why Choose Selvyna" class="section-image">
+      </div>
+    </div>
+  </section>
 
+  <section class="catalogs-section">
+    <div class="catalogs-container">
+      <h2 class="section-title centered-title">Proof Points</h2>
+      <div class="numbers-grid">
+        <div class="number-tile">
+          <h3>100+</h3>
+          <p>Brands served worldwide</p>
+        </div>
+        <div class="number-tile">
+          <h3>6+</h3>
+          <p>Years of focused expertise</p>
+        </div>
+        <div class="number-tile">
+          <h3>500k+</h3>
+          <p>Units produced annually</p>
+        </div>
+        <div class="number-tile">
+          <h3>Low MOQ</h3>
+          <p>Startup-friendly onboarding</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="why-choose-us-section">
+    <div class="section-container">
+      <div class="content-left">
+        <h2 class="section-title">Our Process</h2>
+        <ul class="steps-list">
+          <li>Align on target customer, silhouettes, and landed cost goals.</li>
+          <li>Sourcing of fabrics, trims, and washes with lab dips and strike-offs.</li>
+          <li>Pattern drafting, grading, and fit samples with iterative feedback loops.</li>
+          <li>PP sample approval with sealed specs, care labels, and packaging notes.</li>
+          <li>Inline quality checks and final AQL before shipment.</li>
+          <li>Labeling, barcoding, and FBA or retail-ready packing.</li>
+        </ul>
+      </div>
+      <div class="content-right">
+        <img src="images/services.png" alt="Process" class="section-image">
+      </div>
+    </div>
+  </section>
 
-
+  <section class="contact-form-section">
+    <div class="contact-container">
+      <div class="cta-box">
+        <h3>Let’s build your next line together.</h3>
+        <p>Send your tech packs or ideas and we’ll recommend fabrics, MOQ, costing, and timelines.</p>
+        <a href="contact.html">Start a Project</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
     <div class="sitename-footer">Selvyna Atelier</div>
-    <div class="copyright">Copyright &copy;© 2025 Selvyna Atelier</div>
+    <div class="copyright">Copyright © 2025 Selvyna Atelier</div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+</html>
 

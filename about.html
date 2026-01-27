@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
+  <title>About Selvyna Atelier</title>
+  <link href="style.css" rel="stylesheet">
+  <style>
+    .about-hero {
+      background: #ffffff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .about-hero h1 {
+      color: #6e0a1e;
+      font-size: 40px;
+      margin-bottom: 14px;
+    }
+    .about-hero p {
+      color: #555;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .pillar-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+    .pillar-card h3 {
+      color: #6e0a1e;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .pillar-card p {
+      color: #444;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 15px;
+    }
+    .process-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px 24px;
+    }
+    .process-list li {
+      position: relative;
+      padding-left: 20px;
+      color: #444;
+      line-height: 1.5;
+    }
+    .process-list li::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2e3440;
+      font-size: 11px;
+    }
+    .cta-panel {
+      background: #2e3440;
+      color: #fff;
+      padding: 30px 24px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cta-panel h3 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .cta-panel p {
+      margin: 8px 0 0 0;
+      color: #e8e8e8;
+      line-height: 1.6;
+    }
+    .cta-panel a {
+      background: #ffffff;
+      color: #2e3440;
+      padding: 12px 22px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.3s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+    .cta-panel a:hover {
+      background: #f2f2f2;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 900px) {
+      .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .pillars-grid { grid-template-columns: 1fr; }
+      .about-hero { padding: 60px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sitename">
+      <img src="images/Logo.png" alt="Selvyna Atelier" class="logo">
+      <a href="index.html">Selvyna Atelier</a>
+    </div>
+
+    <button class="hamburger" id="hamburger-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <div class="menu" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <h1>About Selvyna Atelier</h1>
+    <p>
+      Selvyna Atelier is a women’s fashion brand and private label manufacturer based in Bangladesh. We specialize in trend-forward design, ethical production, and factory-direct pricing that helps emerging and established labels bring premium apparel to market quickly.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="section-title">Who We Are</h2>
+        <p>
+          We blend design studio thinking with disciplined garment manufacturing. From fabric sourcing and pattern development to grading, fitting, sampling, and bulk production, our team delivers consistent quality across seasonal and evergreen lines.
+        </p>
+        <p>
+          Every collection is supported by transparent lead times, ethical compliance, and responsive communication. Our partners trust us for low-MOQ launches, retail replenishment, and Amazon FBA-ready fulfillment—all under one roof.
+        </p>
+        <a href="services.html" class="btn-dark">Explore Our Services</a>
+      </div>
+      <div class="about-video">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/3gLm8bKkuu4?rel=0" title="Selvyna Atelier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="section-container">
+      <div class="content-left">
+        <h2 class="section-title">What We Deliver</h2>
+        <ul class="arrow-list">
+          <li>Complete tech pack creation and pattern development.</li>
+          <li>Fabric/trim sourcing with lab dips, wash, and hand-feel approvals.</li>
+          <li>Sales and pre-production samples with fit refinement.</li>
+          <li>Ethical bulk manufacturing with strict QC at every stage.</li>
+          <li>Private labeling, packaging, and carton marking tailored to your brand.</li>
+          <li>Amazon FBA-ready prep, barcoding, and export logistics.</li>
+        </ul>
+        <a href="catalog.html" class="btn-dark">View Product Categories</a>
+      </div>
+      <div class="content-right">
+        <img src="images/services.png" alt="Selvyna Atelier services" class="section-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us-section">
+    <div class="section-container">
+      <div class="content-left">
+        <h2 class="section-title">Our Pillars</h2>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <h3>Design-Led Production</h3>
+            <p>Trend research, silhouettes, and construction are planned with production feasibility so styles move from tech pack to floor-ready smoothly.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Quality & Compliance</h3>
+            <p>Layered QC, fabric testing, needle policy, and compliant facilities ensure every unit meets buyer standards.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Speed & Flexibility</h3>
+            <p>Low MOQs, agile lines, and clear milestones keep capsules, pilots, and replenishment on schedule.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <img src="images/whychooseus.png" alt="Why Selvyna Atelier" class="section-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogs-section">
+    <div class="catalogs-container">
+      <h2 class="section-title centered-title">How We Work</h2>
+      <ul class="process-list">
+        <li>Creative brief, market references, and target cost alignment.</li>
+        <li>Fabric/trim sourcing, lab dips, and strike-off approvals.</li>
+        <li>Pattern, grading, and fit samples with iterative feedback.</li>
+        <li>PP sample sign-off with sealed specs and packaging instructions.</li>
+        <li>Inline QC and final AQL inspection before shipment.</li>
+        <li>Labeling, barcoding, and FBA-ready prep or retail pack-out.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="contact-container">
+      <div class="cta-panel">
+        <div>
+          <h3>Ready to start your next collection?</h3>
+          <p>Share your tech packs or ideas—we will advise on fabrics, MOQ, and timelines.</p>
+        </div>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
+    <div class="sitename-footer">Selvyna Atelier</div>
+    <div class="copyright">Copyright © 2025 Selvyna Atelier</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

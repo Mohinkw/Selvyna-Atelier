@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
+    <title>Our Services - Selvyna Atelier</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="sitename">
+            <img src="images/Logo.png" alt="Selvyna Atelier" class="logo">
+            <a href="index.html">Selvyna Atelier</a>
+        </div>
+
+        <button class="hamburger" id="hamburger-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+        <div class="menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <style>
+        body {
+            background-color: #ffffff !important;
+        }
+
+        .services-hero {
+            background: white;
+            color: #333;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .services-hero h1 {
+            font-size: 42px;
+            margin: 0;
+            font-weight: 700;
+            color: #6e0a1e;
+        }
+
+        .services-hero p {
+            font-size: 16px;
+            opacity: 0.8;
+            margin: 12px 0 0 0;
+            color: #666;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 80px 20px;
+        }
+
+        .service-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+            padding-bottom: 60px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .service-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .service-group.reverse {
+            direction: rtl;
+        }
+
+        .service-group.reverse>* {
+            direction: ltr;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #f0e6e6 0%, #ede0e6 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-content h2 {
+            color: #6e0a1e;
+            font-size: 28px;
+            margin-bottom: 32px;
+            font-weight: 700;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            margin-bottom: 24px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .service-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-list strong {
+            color: #6e0a1e;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .service-list p {
+            margin: 0;
+            font-size: 15px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 32px;
+            }
+
+            .service-group {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-group.reverse {
+                direction: ltr;
+            }
+
+            .service-image {
+                height: 280px;
+            }
+
+            .service-content h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+
+    <div class="services-hero">
+        <h1>Our Services</h1>
+        <p>End-to-End Fashion Manufacturing & Sourcing Solutions</p>
+    </div>
+
+    <section class="services-container">
+        <div class="service-group">
+            <div class="service-image">
+                <img src="images/Services/Design & Pre-Production.webp" alt="Design & Pre-Production">
+            </div>
+            <div class="service-content">
+                <h2>Design & Pre-Production</h2>
+                <ul class="service-list">
+                    <li>
+                        <strong>Product Research & Development</strong>
+                        <p>Our R&D team provides the latest insights on market trends, fabric innovation, washing
+                            techniques, and finishes to keep your collection competitive and modern.</p>
+                    </li>
+                    <li>
+                        <strong>Technical Design & Tech Packs</strong>
+                        <p>Expert designers create comprehensive, factory-ready Tech Packs including detailed
+                            measurements, construction notes, material specifications, and print/embroidery placement
+                            for flawless execution.</p>
+                    </li>
+                    <li>
+                        <strong>Pattern Making & Sampling</strong>
+                        <p>We develop precise patterns and handle multiple rounds of sample production to ensure perfect
+                            fit, design validation, and material integrity before moving to bulk manufacturing.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-group reverse">
+            <div class="service-image">
+                <img src="images/Services/Manufacturing & Quality Assurance.webp"
+                    alt="Manufacturing & Quality Assurance">
+            </div>
+            <div class="service-content">
+                <h2>Manufacturing & Quality Assurance</h2>
+                <ul class="service-list">
+                    <li>
+                        <strong>Bulk Production Management</strong>
+                        <p>We oversee all aspects of cut-and-sew, stitching, garment dyeing, and finishing. Our systems
+                            support flexible MOQs (Minimum Order Quantities) to accommodate both small-batch and
+                            high-volume orders.</p>
+                    </li>
+                    <li>
+                        <strong>Specialized Production</strong>
+                        <p>Expertise in various textile categories, including Knitwear (sweaters, tops), Woven (dresses,
+                            trousers, shirts), and specialized wash/finishing services.</p>
+                    </li>
+                    <li>
+                        <strong>Quality Assurance (QA/QC)</strong>
+                        <p>Our dedicated Quality Control teams conduct rigorous multi-stage inspections (raw material,
+                            in-line, and final) based on AQL standards to ensure every unit meets your exact
+                            specifications and international quality benchmarks.</p>
+                    </li>
+                    <li>
+                        <strong>Compliance & Ethical Sourcing</strong>
+                        <p>We ensure strict adherence to BSCI, Sedex, and other international labor and environmental
+                            standards across all production units, providing you with a transparent and ethical supply
+                            chain.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-group">
+            <div class="service-image">
+                <img src="images/Services/Supply Chain & Logistics Management.webp"
+                    alt="Supply Chain & Logistics Management">
+            </div>
+            <div class="service-content">
+                <h2>Supply Chain & Logistics Management</h2>
+                <ul class="service-list">
+                    <li>
+                        <strong>Material Sourcing & Negotiation</strong>
+                        <p>Utilizing our vast network, we source and select the highest-quality yarns, fabrics
+                            (including sustainable options), and trims, while negotiating competitive pricing on your
+                            behalf.</p>
+                    </li>
+                    <li>
+                        <strong>Merchandising & Status Reporting</strong>
+                        <p>Our Merchandising team manages communication, production timelines, and documentation,
+                            providing regular status reports so you always know the exact progress of your order.</p>
+                    </li>
+                    <li>
+                        <strong>Private Label & Branding</strong>
+                        <p>Complete private label services, including custom branding, labeling, packaging, barcoding,
+                            and Amazon FBA Prep to get your products market-ready immediately.</p>
+                    </li>
+                    <li>
+                        <strong>Global Shipping & Logistics</strong>
+                        <p>We manage the complete supply chain logistics, including loading supervision, customs
+                            clearance, and global shipping, ensuring reliable, on-time delivery to your destination.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
+        <div class="sitename-footer">Selvyna Atelier</div>
+        <div class="copyright">Copyright &copy;© 2025 Selvyna Atelier</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+

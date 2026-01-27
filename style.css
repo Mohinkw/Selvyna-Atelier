@@ -577,6 +577,11 @@ header {
     grid-template-columns: 1fr; /* Single column on small screens for better legibility */
     gap: 10px;
   }
+
+  /* Keep the home page catalog section at two columns on small screens */
+  .catalog-grid.home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .view-all-card {
     min-height: 150px;
   }

@@ -574,7 +574,7 @@ header {
 
 @media (max-width: 600px) {
   .catalog-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Single column on small screens for better legibility */
     gap: 10px;
   }
   .view-all-card {

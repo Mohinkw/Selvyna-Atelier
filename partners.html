@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selvyna Atelier</title>
+  <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
+  <title>Our Partners - Selvyna Atelier</title>
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -16,31 +17,386 @@
     </div>
 
     <button class="hamburger" id="hamburger-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
 
     <div class="menu" id="nav-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="https://selvynaatelier.com/catalog">Catalog</a></li>
-        <li><a href="https://selvynaatelier.com/contact-us">Contact Us</a></li>
-        <li><a href="https://selvynaatelier.com/blogs">Blogs</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
       </ul>
     </div>
   </header>
 
+  <style>
+    .partners-hero {
+      background: white;
+      color: #333;
+      padding: 80px 20px;
+      text-align: center;
+      margin-bottom: 60px;
+      border-bottom: 2px solid #f0f0f0;
+    }
 
+    .partners-hero h1 {
+      font-size: 42px;
+      margin: 0;
+      font-weight: 700;
+      color: #6e0a1e;
+    }
 
+    .partners-hero p {
+      font-size: 18px;
+      opacity: 0.8;
+      margin: 12px 0 0 0;
+      color: #666;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
+    .partners-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 80px 20px;
+    }
 
+    .partner-item {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 80px;
+      padding-bottom: 60px;
+      border-bottom: 2px solid #f0f0f0;
+    }
 
+    .partner-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .partner-logo {
+      width: 100%;
+      height: 300px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #f0f0f0;
+      padding: 30px;
+    }
+
+    .partner-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .partner-details {
+      padding: 0 20px;
+    }
+
+    .partner-details h2 {
+      font-size: 32px;
+      color: #6e0a1e;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .partner-details h3 {
+      font-size: 20px;
+      color: #b78b55;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .partner-details p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .partner-details ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .partner-details ul li {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .partner-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 15px;
+    }
+
+    .stat-box h4 {
+      font-size: 28px;
+      color: #6e0a1e;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .stat-box p {
+      font-size: 14px;
+      color: #777;
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .partners-hero h1 {
+        font-size: 32px;
+      }
+
+      .partners-hero p {
+        font-size: 16px;
+      }
+
+      .partner-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+      }
+
+      .partner-logo {
+        height: 200px;
+        padding: 20px;
+      }
+
+      .partner-details {
+        padding: 0;
+      }
+
+      .partner-details h2 {
+        font-size: 24px;
+      }
+
+      .partner-details h3 {
+        font-size: 18px;
+      }
+
+      .partner-details p,
+      .partner-details ul li {
+        font-size: 15px;
+      }
+
+      .partner-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-box h4 {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+  <div class="partners-hero">
+    <h1>Our Global Partners & Clients</h1>
+    <p>Trusted by leading international retailers and brands. We deliver excellence through strategic partnerships built
+      on quality, reliability, and shared success.</p>
+  </div>
+
+  <div class="partners-container">
+
+    <!-- Kohl's -->
+    <div class="partner-item">
+      <div class="partner-logo">
+        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohl's">
+      </div>
+      <div class="partner-details">
+        <h2>Kohl's</h2>
+        <h3>About the Partnership</h3>
+        <p>Kohl's is one of America's largest department store chains with over 1,100 locations nationwide. As a trusted
+          manufacturing partner for Kohl's, we produce high-quality women's apparel that meets their rigorous standards
+          for quality, fit, and style.</p>
+
+        <h3>What We Provide</h3>
+        <ul>
+          <li>Private label women's clothing collections for multiple Kohl's brands</li>
+          <li>Seasonal fashion lines including activewear, casual wear, and work attire</li>
+          <li>Compliance with Kohl's strict vendor code of conduct and quality standards</li>
+          <li>Timely production and delivery to meet retail calendar deadlines</li>
+          <li>Competitive pricing with consistent quality assurance</li>
+        </ul>
+
+        <h3>Why Kohl's Chose Us</h3>
+        <p>Our partnership with Kohl's demonstrates our capability to handle large-scale production while maintaining
+          exceptional quality. We understand the demands of major American retailers and deliver products that meet
+          their exacting specifications, brand requirements, and ethical standards.</p>
+      </div>
+    </div>
+
+    <!-- Gymboree -->
+    <div class="partner-item">
+      <div class="partner-logo">
+        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree">
+      </div>
+      <div class="partner-details">
+        <h2>Gymboree</h2>
+        <h3>About the Partnership</h3>
+        <p>Gymboree is a beloved children's apparel brand known for colorful, high-quality clothing and accessories.
+          While primarily known for children's wear, our partnership extends to women's clothing lines associated with
+          their brand family, focusing on quality fabrics and playful designs.</p>
+
+        <h3>What We Provide</h3>
+        <ul>
+          <li>Premium quality women's casual and leisure wear</li>
+          <li>Coordinated family fashion collections</li>
+          <li>Soft, comfortable fabrics suitable for active lifestyles</li>
+          <li>Strict adherence to children's product safety standards and ethics</li>
+          <li>Fast turnaround times for seasonal collections</li>
+        </ul>
+
+        <h3>Why Gymboree Chose Us</h3>
+        <p>Gymboree values our commitment to ethical manufacturing and quality control. Our facility meets their
+          stringent safety and social compliance requirements, ensuring every garment is produced in a safe, responsible
+          environment with attention to detail and craftsmanship.</p>
+      </div>
+    </div>
+
+    <!-- KIK -->
+    <div class="partner-item">
+      <div class="partner-logo">
+        <img src="images/Certificates & Partners/KIK.webp" alt="KIK Textilien">
+      </div>
+      <div class="partner-details">
+        <h2>KIK Textilien und Non-Food</h2>
+        <h3>About the Partnership</h3>
+        <p>KIK is one of Europe's largest discount textile retailers, operating over 4,000 stores across multiple
+          countries. As a manufacturing partner, we supply high-volume, value-oriented women's fashion that combines
+          quality with affordability for the European market.</p>
+
+        <h3>What We Provide</h3>
+        <ul>
+          <li>Large-scale production of women's basics and fashion essentials</li>
+          <li>Trendy, affordable clothing lines for the European discount market</li>
+          <li>Compliance with EU textile regulations and safety standards</li>
+          <li>Efficient production cycles to support fast fashion demand</li>
+          <li>Sustainable and ethical manufacturing practices</li>
+        </ul>
+
+        <h3>Why KIK Chose Us</h3>
+        <p>Our ability to produce high volumes without compromising quality makes us an ideal partner for KIK's
+          extensive retail network. We understand the European market's demand for value fashion and deliver products
+          that meet both cost efficiency and quality expectations.</p>
+      </div>
+    </div>
+
+    <!-- Matalan -->
+    <div class="partner-item">
+      <div class="partner-logo">
+        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan">
+      </div>
+      <div class="partner-details">
+        <h2>Matalan</h2>
+        <h3>About the Partnership</h3>
+        <p>Matalan is a leading Brit'sh fashion and homeware retailer with over 230 stores across the UK. Known for
+          offering quality fashion at great value, Matalan partners with us to manufacture diverse women's clothing
+          collections that blend style, quality, and affordability.</p>
+
+        <h3>What We Provide</h3>
+        <ul>
+          <li>Complete women's fashion ranges from casual to occasion wear</li>
+          <li>Private label collections tailored to UK market preferences</li>
+          <li>Seasonal trend-driven designs with fast production cycles</li>
+          <li>Full compliance with UK retail standards and regulations</li>
+          <li>Ethical sourcing and responsible manufacturing practices</li>
+        </ul>
+
+        <h3>Why Matalan Chose Us</h3>
+        <p>Matalan trusts our expertise in delivering trend-focused, quality apparel that resonates with Brit'sh
+          consumers. Our understanding of UK sizing, style preferences, and retail requirements, combined with our
+          competitive pricing and ethical standards, makes us a valued long-term partner.</p>
+
+        <div class="partner-stats">
+          <div class="stat-box">
+            <h4>230+</h4>
+            <p>Matalan Stores Served</p>
+          </div>
+          <div class="stat-box">
+            <h4>4 Seasons</h4>
+            <p>Collections Per Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marks & Spencer -->
+    <div class="partner-item">
+      <div class="partner-logo">
+        <div
+          style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px; font-weight: 700; color: #6e0a1e;">
+          M'S</div>
+      </div>
+      <div class="partner-details">
+        <h2>Marks & Spencer</h2>
+        <h3>About the Partnership</h3>
+        <p>Marks & Spencer is one of the UK's most iconic retailers, renowned for quality clothing, food, and homeware
+          since 1884. With over 1,000 stores worldwide, M'S sets the standard for Brit'sh retail excellence. We're proud
+          to manufacture women's apparel for this prestigious brand.</p>
+
+        <h3>What We Provide</h3>
+        <ul>
+          <li>Premium quality women's fashion collections for M'S stores</li>
+          <li>Ethically produced garments meeting M'S's rigorous Plan A sustainability standards</li>
+          <li>Classic Brit'sh styles with contemporary fashion trends</li>
+          <li>Strict quality control ensuring M'S's reputation for excellence</li>
+          <li>Full compliance with UK and international ethical sourcing requirements</li>
+        </ul>
+
+        <h3>Why Marks & Spencer Chose Us</h3>
+        <p>M'S selected us for our unwavering commitment to ethical production and premium garment quality. Our facility
+          meets their world-class standards for worker welfare, environmental responsibility, and consistent product
+          excellence. This partnership reflects our capability to serve one of the world's most respected retail brands.
+        </p>
+
+        <div class="partner-stats">
+          <div class="stat-box">
+            <h4>1,000+</h4>
+            <p>M'S Stores Worldwide</p>
+          </div>
+          <div class="stat-box">
+            <h4>140 Years</h4>
+            <p>Retail Excellence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <footer>
     <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
     <div class="sitename-footer">Selvyna Atelier</div>
-    <div class="copyright">Copyright &copy;© 2025 Selvyna Atelier</div>
+    <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-

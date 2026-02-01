@@ -1,5 +1,6 @@
-﻿﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +14,27 @@
       padding: 70px 20px;
       text-align: center;
     }
+
     .why-hero h1 {
       color: #6e0a1e;
       font-size: 40px;
       margin-bottom: 14px;
     }
+
     .why-hero p {
       color: #555;
       max-width: 900px;
       margin: 0 auto;
       line-height: 1.8;
     }
+
     .benefit's-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 28px;
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 28px;
     }
+
     .benefit-card {
       background: #fff;
       border: 1px solid #eee;
@@ -37,23 +42,27 @@
       padding: 18px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     }
+
     .benefit-card h3 {
       margin: 0 0 8px 0;
       color: #6e0a1e;
       font-size: 18px;
     }
+
     .benefit-card p {
       margin: 0;
       color: #444;
       line-height: 1.6;
       font-size: 15px;
     }
+
     .numbers-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
       margin-top: 24px;
     }
+
     .number-tile {
       background: #2e3440;
       color: #fff;
@@ -61,17 +70,20 @@
       padding: 18px;
       text-align: center;
     }
+
     .number-tile h3 {
       margin: 0 0 6px 0;
       font-size: 22px;
       font-weight: 800;
     }
+
     .number-tile p {
       margin: 0;
       color: #e6e6e6;
       font-size: 14px;
       letter-spacing: 0.3px;
     }
+
     .steps-list {
       list-style: none;
       padding: 0;
@@ -80,12 +92,14 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 18px 24px;
     }
+
     .steps-list li {
       position: relative;
       padding-left: 22px;
       color: #444;
       line-height: 1.5;
     }
+
     .steps-list li::before {
       content: "?";
       position: absolute;
@@ -94,6 +108,7 @@
       color: #2e3440;
       font-size: 11px;
     }
+
     .cta-box {
       background: #6e0a1e;
       color: #fff;
@@ -102,15 +117,18 @@
       text-align: center;
       margin-top: 32px;
     }
+
     .cta-box h3 {
       margin: 0 0 10px 0;
       font-size: 22px;
     }
+
     .cta-box p {
       margin: 0 0 16px 0;
       line-height: 1.6;
       color: #f6f6f6;
     }
+
     .cta-box a {
       display: inline-block;
       background: #ffffff;
@@ -121,19 +139,36 @@
       font-weight: 700;
       transition: background 0.3s ease, transform 0.2s ease;
     }
-    .cta-box a:hover { background: #f3f3f3; transform: translateY(-2px); }
+
+    .cta-box a:hover {
+      background: #f3f3f3;
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 1024px) {
       .benefit's-grid { grid-template-columns: repeat(2, 1fr); }
-      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
-      .steps-list { grid-template-columns: 1fr; }
+ .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .steps-list {
+        grid-template-columns: 1fr;
+      }
     }
+
     @media (max-width: 640px) {
       .benefit's-grid { grid-template-columns: 1fr; }
-      .numbers-grid { grid-template-columns: 1fr 1fr; }
-      .why-hero { padding: 60px 18px; }
+ .numbers-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-hero {
+        padding: 60px 18px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="sitename">
@@ -142,7 +177,12 @@
     </div>
 
     <button class="hamburger" id="hamburger-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
 
     <div class="menu" id="nav-menu">
@@ -158,7 +198,8 @@
   <section class="why-hero">
     <h1>Why Choose Selvyna Atelier</h1>
     <p>
-      We combine design expertise, compliant production, and agile logistics so your collections reach customers fasterwith factory-direct pricing and dependable quality control.
+      We combine design expertise, compliant production, and agile logistics so your collections reach customers
+      fasterwith factory-direct pricing and dependable quality control.
     </p>
   </section>
 
@@ -169,7 +210,8 @@
         <div class="benefit's-grid">
           <div class="benefit-card">
             <h3>Design Partnership</h3>
-            <p>We translate mood boards into production-ready tech packs, patterns, and fit's tailored to your market.</p>
+            <p>We translate mood boards into production-ready tech packs, patterns, and fit's tailored to your market.
+            </p>
           </div>
           <div class="benefit-card">
             <h3>Low MOQ, High Care</h3>
@@ -177,7 +219,8 @@
           </div>
           <div class="benefit-card">
             <h3>Fabric & Trim Sourcing</h3>
-            <p>Trusted mills and trim partners for knit's, wovens, denim, and performance fabrics with testing support.</p>
+            <p>Trusted mills and trim partners for knit's, wovens, denim, and performance fabrics with testing support.
+            </p>
           </div>
           <div class="benefit-card">
             <h3>Ethical & Compliant</h3>
@@ -260,5 +303,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>

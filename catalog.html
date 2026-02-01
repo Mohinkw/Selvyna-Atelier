@@ -17,7 +17,12 @@
     </div>
 
     <button class="hamburger" id="hamburger-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
 
     <div class="menu" id="nav-menu">
@@ -34,12 +39,14 @@
     body {
       background-color: #ffffff !important;
     }
+
     .catalog-section {
       max-width: 1000px;
       margin: 0 auto;
       padding: 60px 20px;
       background-color: #ffffff;
     }
+
     .catalog-section h1 {
       font-size: 36px;
       color: #6e0a1e;
@@ -47,6 +54,7 @@
       text-align: center;
       font-weight: 700;
     }
+
     .catalog-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -55,10 +63,12 @@
       padding: 0;
       margin: 0;
     }
+
     .catalog-list li {
       display: flex;
       flex-direction: column;
     }
+
     .catalog-item-link {
       display: flex;
       flex-direction: column;
@@ -66,12 +76,15 @@
       text-decoration: none;
       transition: transform 0.3s ease;
     }
+
     .catalog-item-link:hover {
       transform: translateY(-4px);
     }
+
     .catalog-item-link:hover .catalog-item-image {
       opacity: 0.9;
     }
+
     .catalog-item-image {
       width: 100%;
       height: 280px;
@@ -80,6 +93,7 @@
       border-radius: 8px 8px 0 0;
       transition: opacity 0.3s ease;
     }
+
     .catalog-item-name {
       background: white;
       padding: 20px;
@@ -92,30 +106,37 @@
       justify-content: center;
       text-align: center;
     }
+
     .catalog-item-name h3 {
       margin: 0;
       font-size: 18px;
       font-weight: 600;
       color: #6e0a1e;
     }
+
     .catalog-list .disabled-link {
       pointer-events: none;
       opacity: 0.6;
     }
+
     .catalog-list .disabled-link .catalog-item-image {
       filter: grayscale(100%);
     }
+
     .catalog-list .disabled-link h3 {
       color: #999;
     }
+
     @media (max-width: 768px) {
       .catalog-list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 16px;
       }
+
       .catalog-item-image {
         height: 200px;
       }
+
       .catalog-section h1 {
         font-size: 28px;
       }
@@ -124,131 +145,172 @@
 
   <section class="catalog-section">
     <h1>Catalogs</h1>
-    
+
     <ul class="catalog-list">
       <li>
         <a href="dresses.html" class="catalog-item-link">
           <img src="images/Catalogs/Dresses.webp" alt="Dresses" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Dresses</h3></div>
+          <div class="catalog-item-name">
+            <h3>Dresses</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="Tops-Tees-Blouses.html" class="catalog-item-link">
           <img src="images/Catalogs/Tops, Tees & Blouses.webp" alt="Tops, Tees & Blouses" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Tops, Tees & Blouses</h3></div>
+          <div class="catalog-item-name">
+            <h3>Tops, Tees & Blouses</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="sweaters.html" class="catalog-item-link">
           <img src="images/Catalogs/Sweaters.webp" alt="Sweaters" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Sweaters</h3></div>
+          <div class="catalog-item-name">
+            <h3>Sweaters</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="Fashion-Hoodies-Sweatshirts.html" class="catalog-item-link">
-          <img src="images/Catalogs/Fashion Hoodies & Sweatshirts.webp" alt="Fashion Hoodies & Sweatshirts" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Fashion Hoodies & Sweatshirts</h3></div>
+          <img src="images/Catalogs/Fashion Hoodies & Sweatshirts.webp" alt="Fashion Hoodies & Sweatshirts"
+            class="catalog-item-image">
+          <div class="catalog-item-name">
+            <h3>Fashion Hoodies & Sweatshirts</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="jeans.html" class="catalog-item-link">
           <img src="images/Catalogs/Jeans.webp" alt="Jeans" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Jeans</h3></div>
+          <div class="catalog-item-name">
+            <h3>Jeans</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="pants.html" class="catalog-item-link">
           <img src="images/Catalogs/Pants/51.webp" alt="Pants" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Pants</h3></div>
+          <div class="catalog-item-name">
+            <h3>Pants</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="skirts.html" class="catalog-item-link">
           <img src="images/Catalogs/Skirts/61.webp" alt="Skirts" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Skirts</h3></div>
+          <div class="catalog-item-name">
+            <h3>Skirts</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="shorts.html" class="catalog-item-link">
           <img src="images/Catalogs/Shorts/71.webp" alt="Shorts" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Shorts</h3></div>
+          <div class="catalog-item-name">
+            <h3>Shorts</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="activewear.html" class="catalog-item-link">
           <img src="images/Catalogs/Activewear/81.webp" alt="Activewear" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Activewear</h3></div>
+          <div class="catalog-item-name">
+            <h3>Activewear</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="swimsuits-cover-ups.html" class="catalog-item-link">
-          <img src="images/Catalogs/Swimsuits and Cover Ups/91.webp" alt="Swimsuits & Cover Ups" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Swimsuits & Cover Ups</h3></div>
+          <img src="images/Catalogs/Swimsuits and Cover Ups/91.webp" alt="Swimsuits & Cover Ups"
+            class="catalog-item-image">
+          <div class="catalog-item-name">
+            <h3>Swimsuits & Cover Ups</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="lingerie-sleep-lounge.html" class="catalog-item-link">
-          <img src="images/Catalogs/Lingerie, Sleep & Lounge/101.webp" alt="Lingerie, Sleep & Lounge" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Lingerie, Sleep & Lounge</h3></div>
+          <img src="images/Catalogs/Lingerie, Sleep & Lounge/101.webp" alt="Lingerie, Sleep & Lounge"
+            class="catalog-item-image">
+          <div class="catalog-item-name">
+            <h3>Lingerie, Sleep & Lounge</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="jumpsuits-rompers-overalls.html" class="catalog-item-link">
-          <img src="images/Catalogs/Jumpsuits, Rompers & Overalls/111.webp" alt="Jumpsuits, Rompers & Overalls" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Jumpsuits, Rompers & Overalls</h3></div>
+          <img src="images/Catalogs/Jumpsuits, Rompers & Overalls/111.webp" alt="Jumpsuits, Rompers & Overalls"
+            class="catalog-item-image">
+          <div class="catalog-item-name">
+            <h3>Jumpsuits, Rompers & Overalls</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="coats-jackets-vests.html" class="catalog-item-link">
-          <img src="images/Catalogs/Coats, Jackets & Vests/121.webp" alt="Coats, Jackets & Vests" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Coats, Jackets & Vests</h3></div>
+          <img src="images/Catalogs/Coats, Jackets & Vests/121.webp" alt="Coats, Jackets & Vests"
+            class="catalog-item-image">
+          <div class="catalog-item-name">
+            <h3>Coats, Jackets & Vests</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="suiting-blazers.html" class="catalog-item-link">
           <img src="images/Catalogs/Suiting & Blazers/131.webp" alt="Suiting & Blazers" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Suiting & Blazers</h3></div>
+          <div class="catalog-item-name">
+            <h3>Suiting & Blazers</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="socks-hosiery.html" class="catalog-item-link">
           <img src="images/Catalogs/Socks & Hosiery/141.webp" alt="Socks & Hosiery" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Socks & Hosiery</h3></div>
+          <div class="catalog-item-name">
+            <h3>Socks & Hosiery</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="clothing-sets.html" class="catalog-item-link">
           <img src="images/Catalogs/Clothing Sets/160.webp" alt="Clothing Sets" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Clothing Sets</h3></div>
+          <div class="catalog-item-name">
+            <h3>Clothing Sets</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="bodysuits.html" class="catalog-item-link">
           <img src="images/Catalogs/Bodysuits/165.webp" alt="Bodysuits" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Bodysuits</h3></div>
+          <div class="catalog-item-name">
+            <h3>Bodysuits</h3>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="others.html" class="catalog-item-link">
           <img src="images/Catalogs/Others/171.webp" alt="Others" class="catalog-item-image">
-          <div class="catalog-item-name"><h3>Others</h3></div>
+          <div class="catalog-item-name">
+            <h3>Others</h3>
+          </div>
         </a>
       </li>
     </ul>
@@ -265,4 +327,3 @@
 
   <script src="script.js"></script>
 </body>
-

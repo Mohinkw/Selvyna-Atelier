@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +14,27 @@
       padding: 70px 20px;
       text-align: center;
     }
+
     .about-hero h1 {
       color: #6e0a1e;
       font-size: 40px;
       margin-bottom: 14px;
     }
+
     .about-hero p {
       color: #555;
       max-width: 900px;
       margin: 0 auto;
       line-height: 1.8;
     }
+
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 32px;
     }
+
     .pillar-card {
       background: #fff;
       border: 1px solid #eee;
@@ -37,17 +42,20 @@
       padding: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     }
+
     .pillar-card h3 {
       color: #6e0a1e;
       margin-bottom: 10px;
       font-size: 20px;
     }
+
     .pillar-card p {
       color: #444;
       line-height: 1.6;
       margin: 0;
       font-size: 15px;
     }
+
     .process-list {
       list-style: none;
       padding: 0;
@@ -56,12 +64,14 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 18px 24px;
     }
+
     .process-list li {
       position: relative;
       padding-left: 20px;
       color: #444;
       line-height: 1.5;
     }
+
     .process-list li::before {
       content: "➤";
       position: absolute;
@@ -70,6 +80,7 @@
       color: #2e3440;
       font-size: 11px;
     }
+
     .cta-panel {
       background: #2e3440;
       color: #fff;
@@ -81,16 +92,19 @@
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .cta-panel h3 {
       margin: 0;
       font-size: 22px;
       font-weight: 700;
     }
+
     .cta-panel p {
       margin: 8px 0 0 0;
       color: #e8e8e8;
       line-height: 1.6;
     }
+
     .cta-panel a {
       background: #ffffff;
       color: #2e3440;
@@ -101,20 +115,34 @@
       transition: background 0.3s ease, transform 0.2s ease;
       white-space: nowrap;
     }
+
     .cta-panel a:hover {
       background: #f2f2f2;
       transform: translateY(-2px);
     }
+
     @media (max-width: 900px) {
-      .pillars-grid { grid-template-columns: repeat(2, 1fr); }
-      .process-list { grid-template-columns: 1fr; }
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-list {
+        grid-template-columns: 1fr;
+      }
     }
+
     @media (max-width: 600px) {
-      .pillars-grid { grid-template-columns: 1fr; }
-      .about-hero { padding: 60px 18px; }
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero {
+        padding: 60px 18px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="sitename">
@@ -123,7 +151,12 @@
     </div>
 
     <button class="hamburger" id="hamburger-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
 
     <div class="menu" id="nav-menu">
@@ -139,7 +172,9 @@
   <section class="about-hero">
     <h1>About Selvyna Atelier</h1>
     <p>
-      Selvyna Atelier is a women's fashion brand and private label manufacturer based in Bangladesh. We specialize in trend-forward design, ethical production, and factory-direct pricing that helps emerging and established labels bring premium apparel to market quickly.
+      Selvyna Atelier is a women's fashion brand and private label manufacturer based in Bangladesh. We specialize in
+      trend-forward design, ethical production, and factory-direct pricing that helps emerging and established labels
+      bring premium apparel to market quickly.
     </p>
   </section>
 
@@ -148,15 +183,22 @@
       <div class="about-text">
         <h2 class="section-title">Who We Are</h2>
         <p>
-          We blend design studio thinking with disciplined garment manufacturing. From fabric sourcing and pattern development to grading, fitting, sampling, and bulk production, our team delivers consistent quality across seasonal and evergreen lines.
+          We blend design studio thinking with disciplined garment manufacturing. From fabric sourcing and pattern
+          development to grading, fitting, sampling, and bulk production, our team delivers consistent quality across
+          seasonal and evergreen lines.
         </p>
         <p>
-          Every collection is supported by transparent lead times, ethical compliance, and responsive communication. Our partners trust us for low-MOQ launches, retail replenishment, and Amazon FBA-ready fulfillment—all under one roof.
+          Every collection is supported by transparent lead times, ethical compliance, and responsive communication. Our
+          partners trust us for low-MOQ launches, retail replenishment, and Amazon FBA-ready fulfillment—all under one
+          roof.
         </p>
         <a href="services.html" class="btn-dark">Explore Our Services</a>
       </div>
       <div class="about-video">
-        <iframe width="100%" height="350" src="https://www.youtube.com/embed/3gLm8bKkuu4?rel=0" title="Selvyna Atelier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/3gLm8bKkuu4?rel=0" title="Selvyna Atelier"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
       </div>
     </div>
   </section>
@@ -188,11 +230,13 @@
         <div class="pillars-grid">
           <div class="pillar-card">
             <h3>Design-Led Production</h3>
-            <p>Trend research, silhouettes, and construction are planned with production feasibility so styles move from tech pack to floor-ready smoothly.</p>
+            <p>Trend research, silhouettes, and construction are planned with production feasibility so styles move from
+              tech pack to floor-ready smoothly.</p>
           </div>
           <div class="pillar-card">
             <h3>Quality & Compliance</h3>
-            <p>Layered QC, fabric testing, needle policy, and compliant facilities ensure every unit meets buyer standards.</p>
+            <p>Layered QC, fabric testing, needle policy, and compliant facilities ensure every unit meets buyer
+              standards.</p>
           </div>
           <div class="pillar-card">
             <h3>Speed & Flexibility</h3>
@@ -240,4 +284,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

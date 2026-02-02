@@ -16,8 +16,9 @@
     .blog-card-thumb { width:100%; aspect-ratio:16 / 9; background:#f6f6f6; background-size:cover; background-position:center; border-radius:6px; border:1px solid #e5e5e5; }
     .blog-card h3 { margin:0; color:#6e0a1e; font-size:18px; }
     .blog-card p { margin:0; color:#444; line-height:1.6; font-size:15px; }
-    .blog-card a { color:#2e3440; font-weight:700; text-decoration:none; margin-top:auto; }
-    .blog-card a:hover { color:#6e0a1e; }
+    .blog-card-link { display:flex; flex-direction:column; gap:10px; text-decoration:none; color:inherit; height:100%; }
+    .blog-card-link:hover { text-decoration:none; color:inherit; }
+    .blog-card-link:hover .blog-card-link h3 { color:#6e0a1e; }
     @media (max-width:1024px){ .blog-list { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:640px){ .blog-list { grid-template-columns:1fr; } .blog-list-hero { padding:60px 18px; } }
   </style>
@@ -50,120 +51,106 @@
   </section>
 
   <section class="blog-list">
-    <div class="blog-card">
+    <a href="blogs/how-to-start-a-clothing-brand-2026.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Design%20%26%20Pre-Production.webp');"></div>
       <h3>How to Start a Clothing Brand in 2026</h3>
       <p>Step-by-step launch plan with tech packs, low-MOQ production, and FBA-ready logistics from Bangladesh.</p>
-      <a href="blogs/how-to-start-a-clothing-brand-2026.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/common-mistakes-fashion-startups.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>5 Common Mistakes New Fashion Startups Make</h3>
       <p>Avoid sizing, fabric, and timeline mistakes by partnering with a transparent Bangladesh manufacturer.</p>
-      <a href="blogs/common-mistakes-fashion-startups.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/what-is-a-tech-pack.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Design%20%26%20Pre-Production.webp');"></div>
       <h3>What is a Tech Pack?</h3>
       <p>Why every brand needs a production-ready tech pack before sampling or quoting.</p>
-      <a href="blogs/what-is-a-tech-pack.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/finding-your-niche-womens-fashion.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Finding Your Niche</h3>
       <p>Use trend tools and low MOQ Bangladesh runs to validate profitable women's fashion niches.</p>
-        <a href="blogs/finding-your-niche-womens-fashion.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/bootstrap-vs-investment-costs.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Supply%20Chain%20%26%20Logistics%20Management.webp');"></div>
       <h3>Bootstrap vs. Investment</h3>
       <p>Budget your first drop and know when to raise to scale production.</p>
-      <a href="blogs/bootstrap-vs-investment-costs.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/sourcing-clothing-from-bangladesh.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1458324124043-7803d4fec380?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Sourcing from Bangladesh</h3>
       <p>Leverage compliant factories, skilled labor, and factory-direct pricing for startups.</p>
-      <a href="blogs/sourcing-clothing-from-bangladesh.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/low-moq-vs-bulk-production.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1458324124043-7803d4fec380?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Low MOQ vs Bulk Production</h3>
       <p>Choose the right volume to balance cash flow and unit cost.</p>
-      <a href="blogs/low-moq-vs-bulk-production.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/find-reliable-clothing-manufacturer.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Find a Reliable Manufacturer</h3>
       <p>Red flags to avoid and what to verify before you place POs.</p>
-      <a href="blogs/find-reliable-clothing-manufacturer.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/factory-direct-pricing.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Factory Direct Pricing</h3>
       <p>Cut out middlemen and protect your margins with Bangladesh production.</p>
-      <a href="blogs/factory-direct-pricing.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/ethical-manufacturing-future-of-fashion.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Manufacturing%20%26%20Quality%20Assurance.webp');"></div>
       <h3>Ethical Manufacturing</h3>
       <p>Build a trusted brand with compliant, sustainable sourcing in Bangladesh.</p>
-      <a href="blogs/ethical-manufacturing-future-of-fashion.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/amazon-fba-clothing-strategy-bangladesh.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Amazon FBA Clothing Strategy: From Bangladesh Factory to Amazon Warehouse in 2026</h3>
       <p>Ship FBA-ready garments with correct barcodes and carton marking from Dhaka.</p>
-      <a href="blogs/amazon-fba-clothing-strategy-bangladesh.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/best-selling-womens-apparel-amazon-2026.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/herobg.png');"></div>
       <h3>The Best-Selling women's Apparel Categories on Amazon in 2026: What to Manufacture Now</h3>
       <p>Top categories and how Bangladesh manufacturing keeps you competitive.</p>
-        <a href="blogs/best-selling-womens-apparel-amazon-2026.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/quality-control-when-manufacturing-abroad.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Manufacturing%20%26%20Quality%20Assurance.webp');"></div>
       <h3>Quality Control Abroad</h3>
       <p>QC gates, sealed samples, and reports to keep production on-spec.</p>
-      <a href="blogs/quality-control-when-manufacturing-abroad.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/private-labeling-101.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Private Labeling 101</h3>
       <p>Launch faster using Selvyna Atelier in-house designs with your branding.</p>
-      <a href="blogs/private-labeling-101.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/spring-summer-2026-trend-report.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>SS26 Trend Report</h3>
       <p>Key silhouettes, colors, and fabrics for Spring/Summer 2026.</p>
-      <a href="blogs/spring-summer-2026-trend-report.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/fabric-guide-cotton-linen-synthetics.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Design%20%26%20Pre-Production.webp');"></div>
       <h3>Fabric Guide</h3>
       <p>When to pick cotton, linen blends, or performance synthetics.</p>
-      <a href="blogs/fabric-guide-cotton-linen-synthetics.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/perfect-your-sizing-womenswear.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('images/Services/Manufacturing%20%26%20Quality%20Assurance.webp');"></div>
       <h3>Perfect Your Sizing</h3>
       <p>Grading, fit models, and QC to reduce returns in women's wear.</p>
-        <a href="blogs/perfect-your-sizing-womenswear.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/shipping-logistics-bangladesh-usa-uk.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Shipping from Bangladesh</h3>
       <p>Air vs sea, HS codes, and FBA routing to USA/UK.</p>
-      <a href="blogs/shipping-logistics-bangladesh-usa-uk.html">Read article</a>
-    </div>
-    <div class="blog-card">
+    </a>
+    <a href="blogs/scaling-your-brand-when-to-increase-production.html" class="blog-card blog-card-link">
       <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80');"></div>
       <h3>Scaling Your Brand</h3>
       <p>When to move from small batches to bulk and keep QC tight.</p>
-      <a href="blogs/scaling-your-brand-when-to-increase-production.html">Read article</a>
-    </div>
+    </a>
+    <a href="blogs/work-from-home-aesthetic-2026.html" class="blog-card blog-card-link">
+      <div class="blog-card-thumb" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1600&q=80');"></div>
+      <h3>Work From Home Aesthetic 2026</h3>
+      <p>Emerging WFH fashion trends and lounge-to-meeting wear to manufacture.</p>
+    </a>
   </section>
 
       <footer>

@@ -46,12 +46,9 @@ if (hamburgerBtn && navMenu) {
     // Toggle the 'active' class on the menu
     navMenu.classList.toggle("active");
 
-    // Toggle icon between ☰ and ✕
-    if (navMenu.classList.contains("active")) {
-      hamburgerBtn.innerHTML = "✕"; // Close icon
-    } else {
-      hamburgerBtn.innerHTML = "☰"; // Menu icon
-    }
+    const isOpen = navMenu.classList.contains("active");
+    hamburgerBtn.classList.toggle("is-open", isOpen);
+    hamburgerBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 }
 

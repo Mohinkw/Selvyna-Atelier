@@ -3,9 +3,24 @@
 User-agent: *
 Allow: /
 
+# Disallow AI training crawlers (proper robots.txt syntax)
+User-agent: CCBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: Omgilibot
+User-agent: PerplexityBot
+Disallow: /
+
 # Disallow crawling of unnecessary directories
 Disallow: /.git/
 Disallow: /.vscode/
 
 # Sitemap location
 Sitemap: https://www.selvynaatelier.com/sitemap.xml
+
+# Note: Content-Signal is not a valid robots.txt directive.
+# To control AI training, use the User-agent blocks above,
+# or add <meta name="robots" content="noai, noimageai"> to HTML.

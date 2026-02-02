@@ -51,7 +51,29 @@ header {
   border: none;
   color: #6e0a1e;
   cursor: pointer;
-  padding: 5px;
+  padding: 12px;
+  min-width: 48px;
+  min-height: 48px;
+  position: relative;
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  line-height: 1;
+  color: #6e0a1e;
+}
+
+.hamburger.is-open svg {
+  visibility: hidden;
+}
+
+.hamburger.is-open::after {
+  content: "✕";
 }
 
 /* MENU BOX (Desktop default) */
@@ -76,7 +98,7 @@ header {
 }
 
 .menu a:hover {
-  color: #b78b55;
+  color: #8B6914;
 }
 
 /* -------- HEADER RESPONSIVENESS (Mobile) -------- */
@@ -125,7 +147,8 @@ header {
 
   .menu a {
     display: block;
-    padding: 12px;
+    padding: 15px 12px;
+    min-height: 48px;
     width: 100%;
     color: #6e0a1e;
     font-weight: 500;
@@ -150,13 +173,17 @@ header {
   text-align: center;
   padding: 0 20px;
 
-  /* Background Image */
+  /* Background Image - Progressive Enhancement with Fallbacks */
+  background-image: url("images/herobg.png");
+  background-image: -webkit-image-set(
+    url("images/herobg-1280.webp") 1x,
+    url("images/herobg-1920.webp") 2x
+  );
   background-image: image-set(
     url("images/herobg-1280.avif") type("image/avif") 1x,
     url("images/herobg-1920.avif") type("image/avif") 2x,
     url("images/herobg-1280.webp") type("image/webp") 1x,
-    url("images/herobg-1920.webp") type("image/webp") 2x,
-    url("images/herobg.png") type("image/png") 1x
+    url("images/herobg-1920.webp") type("image/webp") 2x
   );
   background-size: cover;
   background-position: center;
@@ -224,13 +251,17 @@ header {
    STATISTICS BAR 
    ======================== */
 .stats-bar {
-  /* Direct image link - No overlay */
+  /* Direct image link with Progressive Enhancement */
+  background-image: url("images/statusbar.png");
+  background-image: -webkit-image-set(
+    url("images/statusbar-1200.webp") 1x,
+    url("images/statusbar-1600.webp") 2x
+  );
   background-image: image-set(
     url("images/statusbar-1200.avif") type("image/avif") 1x,
     url("images/statusbar-1600.avif") type("image/avif") 2x,
     url("images/statusbar-1200.webp") type("image/webp") 1x,
-    url("images/statusbar-1600.webp") type("image/webp") 2x,
-    url("images/statusbar.png") type("image/png") 1x
+    url("images/statusbar-1600.webp") type("image/webp") 2x
   );
 
   /* Standard background settings */
@@ -267,7 +298,7 @@ header {
 
 .stat-item p {
   font-size: 16px;
-  color: #555;
+  color: #4a4a4a;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -758,7 +789,7 @@ header {
 }
 
 .client-company {
-  color: #777;
+  color: #666;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;

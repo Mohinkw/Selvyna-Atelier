@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
     <title>Women's Dresses: Manufacturer and Supplier in Bangladesh | Selvyna Atelier</title>
     <meta name="description" content="Women's dresses manufacturer in Bangladesh. Boho, maxi, midi, A-line, slip dresses. Custom designs, wholesale pricing, low MOQ production available.">
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" media="print" onload="this.media='all'">
     <style>
         /* Page-specific tweaks reusing existing classes */
         .centered-title {
@@ -43,7 +43,7 @@
 <body>
     <header>
         <div class="sitename">
-            <img src="images/Logo.png" alt="Selvyna Atelier" class="logo">
+            <picture><source type="image/avif" srcset="images/Logo-100.avif 1x, images/Logo.avif 2x"><source type="image/webp" srcset="images/Logo-100.webp 1x, images/Logo.webp 2x"><img src="images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async"></picture>
             <a href="index.html">Selvyna Atelier</a>
         </div>
 
@@ -179,7 +179,7 @@
         <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

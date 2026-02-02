@@ -54,3 +54,28 @@ if (hamburgerBtn && navMenu) {
     }
   });
 }
+
+// Lightweight YouTube embed (loads iframe on click)
+document.querySelectorAll(".lite-yt").forEach((container) => {
+  const videoId = container.getAttribute("data-embed");
+  const playBtn = container.querySelector(".lite-yt-play");
+
+  const loadIframe = () => {
+    if (!videoId || container.querySelector("iframe")) return;
+    const iframe = document.createElement("iframe");
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`;
+    container.innerHTML = "";
+    container.appendChild(iframe);
+  };
+
+  if (playBtn) {
+    playBtn.addEventListener("click", loadIframe);
+  } else {
+    container.addEventListener("click", loadIframe);
+  }
+});

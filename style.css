@@ -151,7 +151,11 @@ header {
   padding: 0 20px;
 
   /* Background Image */
-  background-image: url("images/herobg.png");
+  background-image: image-set(
+    url("images/herobg.avif") type("image/avif"),
+    url("images/herobg.webp") type("image/webp"),
+    url("images/herobg.png") type("image/png")
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,7 +223,11 @@ header {
    ======================== */
 .stats-bar {
   /* Direct image link - No overlay */
-  background-image: url("images/statusbar.png");
+  background-image: image-set(
+    url("images/statusbar.avif") type("image/avif"),
+    url("images/statusbar.webp") type("image/webp"),
+    url("images/statusbar.png") type("image/png")
+  );
 
   /* Standard background settings */
   background-size: cover;
@@ -325,6 +333,46 @@ header {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 4px;
+}
+.lite-yt {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.lite-yt iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+.lite-yt-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+}
+.lite-yt-play::before {
+  content: "";
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent #ffffff;
+  margin-left: 4px;
 }
 
 .about-video iframe {

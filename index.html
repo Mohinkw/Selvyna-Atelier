@@ -7,7 +7,9 @@
   <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
   <title>Selvyna Atelier: Women's Clothing Manufacturer in Bangladesh</title>
   <meta name="description" content="Premium women's clothing manufacturer in Bangladesh. Custom private label apparel, low MOQ production, ethical manufacturing, and Amazon FBA solutions. Direct factory pricing.">
-  <link rel="preload" href="images/herobg.png" as="image" fetchpriority="high">
+  <link rel="preload" href="images/herobg.avif" as="image" type="image/avif" fetchpriority="high">
+  <link rel="preload" href="images/herobg.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="images/herobg.png" as="image" type="image/png" fetchpriority="high">
   <link rel="preload" href="style.css" as="style">
   <style>
     body { background-color: #ffffff; color: #333333; }
@@ -31,7 +33,11 @@
 <body>
   <header>
     <div class="sitename">
-      <img src="images/Logo.png" alt="Selvyna Atelier" class="logo" decoding="async">
+      <picture>
+        <source srcset="images/Logo.avif" type="image/avif">
+        <source srcset="images/Logo.webp" type="image/webp">
+        <img src="images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async">
+      </picture>
       <a href="index.html">Selvyna Atelier</a>
     </div>
 
@@ -95,11 +101,9 @@
       </div>
 
       <div class="about-video">
-        <iframe width="100%" height="350" src="https://www.youtube.com/embed/3gLm8bKkuu4?rel=0"
-          title="Selvyna Atelier: Low MOQ Clothing Manufacturing? Here's What We Can Help" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation">
-        </iframe>
+        <div class="lite-yt" data-embed="3gLm8bKkuu4" style="background-image:url('https://i.ytimg.com/vi/3gLm8bKkuu4/hqdefault.jpg');">
+          <button class="lite-yt-play" type="button" aria-label="Play Selvyna Atelier video"></button>
+        </div>
       </div>
 
     </div>
@@ -124,7 +128,11 @@
       </div>
 
       <div class="content-right">
-        <img src="images/services.png" alt="Our Services Icons" class="section-image" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/services.avif" type="image/avif">
+          <source srcset="images/services.webp" type="image/webp">
+          <img src="images/services.png" alt="Our Services Icons" class="section-image" width="1100" height="720" loading="lazy" decoding="async">
+        </picture>
       </div>
 
     </div>
@@ -149,7 +157,11 @@
       </div>
 
       <div class="content-right">
-        <img src="images/whychooseus.png" alt="Why Choose Us Icons" class="section-image" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/whychooseus.avif" type="image/avif">
+          <source srcset="images/whychooseus.webp" type="image/webp">
+          <img src="images/whychooseus.png" alt="Why Choose Us Icons" class="section-image" width="1100" height="720" loading="lazy" decoding="async">
+        </picture>
       </div>
 
     </div>

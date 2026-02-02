@@ -1,0 +1,11 @@
+# Robots.txt for Selvyna Atelier
+# Allow search engines to crawl all pages
+User-agent: *
+Allow: /
+
+# Disallow crawling of unnecessary directories
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Sitemap location
+Sitemap: https://www.selvynaatelier.com/sitemap.xml

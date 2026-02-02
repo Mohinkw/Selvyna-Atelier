@@ -2,288 +2,148 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
-  <title>About Selvyna Atelier: Premier Women's Apparel Manufacturer</title>
-  <meta name="description" content="Learn about Selvyna Atelier, a trusted women's clothing manufacturer in Bangladesh serving 100+ brands worldwide. Specializing in ethical production, quality control, and custom design.">
-  <link href="style.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <style>
-    .about-hero {
-      background: #ffffff;
-      border-bottom: 1px solid #f0f0f0;
-      padding: 70px 20px;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
+    <title>Waffle Knit Tunic: Manufacturer and Supplier in Bangladesh | Selvyna Atelier</title>
+    <meta name="description"
+        content="Waffle knit tunics with cozy texture, stable necklines, and balanced drape. Low MOQ, transparent pricing, custom labels, and FBA-ready packing from Bangladesh.">
+    <link href="style.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <style>
+        .product-hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+        }
 
-    .about-hero h1 {
-      color: #6e0a1e;
-      font-size: 40px;
-      margin-bottom: 14px;
-    }
+        .product-hero h1 {
+            color: #6e0a1e;
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
 
-    .about-hero p {
-      color: #555;
-      max-width: 900px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
+        .product-hero p {
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
 
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 32px;
-    }
+        .product-body {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    .pillar-card {
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 6px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    }
+        .product-img {
+            width: 100%;
+            max-width: 520px;
+            height: auto;
+            display: block;
+            margin: 0 auto 24px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafafa;
+        }
 
-    .pillar-card h3 {
-      color: #6e0a1e;
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
+        h2 {
+            color: #6e0a1e;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
 
-    .pillar-card p {
-      color: #444;
-      line-height: 1.6;
-      margin: 0;
-      font-size: 15px;
-    }
-
-    .process-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px 24px;
-    }
-
-    .process-list li {
-      position: relative;
-      padding-left: 20px;
-      color: #444;
-      line-height: 1.5;
-    }
-
-    .process-list li::before {
-      content: "➤";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #2e3440;
-      font-size: 11px;
-    }
-
-    .cta-panel {
-      background: #2e3440;
-      color: #fff;
-      padding: 30px 24px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .cta-panel h3 {
-      margin: 0;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    .cta-panel p {
-      margin: 8px 0 0 0;
-      color: #e8e8e8;
-      line-height: 1.6;
-    }
-
-    .cta-panel a {
-      background: #ffffff;
-      color: #2e3440;
-      padding: 12px 22px;
-      border-radius: 24px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: background 0.3s ease, transform 0.2s ease;
-      white-space: nowrap;
-    }
-
-    .cta-panel a:hover {
-      background: #f2f2f2;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 900px) {
-      .pillars-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .process-list {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .pillars-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .about-hero {
-        padding: 60px 18px;
-      }
-    }
-  </style>
+        ul {
+            margin: 0 0 16px 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="sitename">
-      <picture><source type="image/avif" srcset="images/Logo-100.avif 1x, images/Logo.avif 2x"><source type="image/webp" srcset="images/Logo-100.webp 1x, images/Logo.webp 2x"><img src="images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async"></picture>
-      <a href="index.html">Selvyna Atelier</a>
-    </div>
+    <header>
+        <div class="sitename">
+            <picture><source type="image/avif" srcset="images/Logo-100.avif 1x, ../../images/Logo.avif 2x"><source type="image/webp" srcset="images/Logo-100.webp 1x, ../../images/Logo.webp 2x"><img src="images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async"></picture>
+            <a href="index.html">Selvyna Atelier</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        <div class="menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <button class="hamburger" id="hamburger-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
+    <section class="product-hero">
+        <h1>Premium Waffle Knit Tunic Manufacturing in Bangladesh</h1>
+        <p>Custom Private Label & Bulk Supply Solutions for Global Fashion Brands</p>
+        <img src="images/Catalogs/Tops, Tees & Blouses/13.webp" alt="Waffle Knit Tunic" class="product-img">
+    </section>
 
-    <div class="menu" id="nav-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="catalog.html">Catalog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-      </ul>
-    </div>
-  </header>
+    <section class="product-body">
+        <h2>Tech Pack & Sampling</h2>
+        <p>Tech packs specify waffle size, GSM, neck shape, drop shoulder, side slit's, and shrink allowances. Fit and
+            handfeel samples in 9-11 days.</p>
 
-  <section class="about-hero">
-    <h1>About Selvyna Atelier</h1>
-    <p>
-      Selvyna Atelier is a women's fashion brand and private label manufacturer based in Bangladesh. We specialize in
-      trend-forward design, ethical production, and factory-direct pricing that helps emerging and established labels
-      bring premium apparel to market quickly.
-    </p>
-  </section>
+        <h2>Making Process</h2>
+        <p><strong>Fabric:</strong> 210-230 GSM cotton/spandex waffle for recovery and breathability; pre-washed to
+            control shrink.</p>
+        <p><strong>Cut & Sew:</strong> Grain-aligned cutting; coverstitch hems; taped shoulders for stability; optional
+            curved hem.</p>
+        <p><strong>Finishing:</strong> Light steam to keep waffle loft; QC for shade, torque, and neck flatness.</p>
 
-  <section class="about-section">
-    <div class="about-container">
-      <div class="about-text">
-        <h2 class="section-title">Who We Are</h2>
-        <p>
-          We blend design studio thinking with disciplined garment manufacturing. From fabric sourcing and pattern
-          development to grading, fitting, sampling, and bulk production, our team delivers consistent quality across
-          seasonal and evergreen lines.
-        </p>
-        <p>
-          Every collection is supported by transparent lead times, ethical compliance, and responsive communication. Our
-          partners trust us for low-MOQ launches, retail replenishment, and Amazon FBA-ready fulfillment—all under one
-          roof.
-        </p>
-        <a href="services.html" class="btn-dark">Explore Our Services</a>
-      </div>
-      <div class="about-video">
-        <iframe width="100%" height="350" src="https://www.youtube.com/embed/3gLm8bKkuu4?rel=0" title="Selvyna Atelier"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
-      </div>
-    </div>
-  </section>
+        <h2>Sourcing</h2>
+        <p>Waffle knit's from compliant mills; eco softeners; trims and labels sourced with RSL documentation.</p>
 
-  <section class="services-section">
-    <div class="section-container">
-      <div class="content-left">
-        <h2 class="section-title">What We Deliver</h2>
-        <ul class="arrow-list">
-          <li>Complete tech pack creation and pattern development.</li>
-          <li>Fabric/trim sourcing with lab dips, wash, and hand-feel approvals.</li>
-          <li>Sales and pre-production samples with fit refinement.</li>
-          <li>Ethical bulk manufacturing with strict QC at every stage.</li>
-          <li>Private labeling, packaging, and carton marking tailored to your brand.</li>
-          <li>Amazon FBA-ready prep, barcoding, and export logistics.</li>
+        <h2>Minimum Order Quantity (MOQ)</h2>
+        <p>Standard MOQ: 400 pcs per color. Shared body across sleeve lengths possible.</p>
+
+        <h2>Price Transparency</h2>
+        <p>Approx. FOB: $3.75 - $4.88 including fabric, coverstitch, shoulder tape, QC, and packing.</p>
+
+        <h2>Production Time</h2>
+        <p>Bulk: 20-23 days after approvals. Melange yarns may add 2-3 days.</p>
+
+        <h2>Custom Labeling & Amazon FBA Ready Packaging</h2>
+        <p>Bagged with barcode/ASIN, hang tags, size stickers, and insert card. Folded to protect neck shape; optional
+            tissue.</p>
+
+        <h2>Selvyna Atelier Advantage</h2>
+        <ul>
+            <li><strong>Neck Stability:</strong> Taped shoulders keep necklines flat.</li>
+            <li><strong>Texture Control:</strong> Waffle loft preserved through gentle finishing.</li>
+            <li><strong>Fit Reliability:</strong> Shrink-managed fabric for consistent drape.</li>
+            <li><strong>QC Transparency:</strong> Torque, shrink, and shade data per lot.</li>
         </ul>
-        <a href="catalog.html" class="btn-dark">View Product Categories</a>
-      </div>
-      <div class="content-right">
-        <img src="images/services.png" alt="Selvyna Atelier services" class="section-image">
-      </div>
-    </div>
-  </section>
 
-  <section class="why-choose-us-section">
-    <div class="section-container">
-      <div class="content-left">
-        <h2 class="section-title">Our Pillars</h2>
-        <div class="pillars-grid">
-          <div class="pillar-card">
-            <h3>Design-Led Production</h3>
-            <p>Trend research, silhouettes, and construction are planned with production feasibility so styles move from
-              tech pack to floor-ready smoothly.</p>
-          </div>
-          <div class="pillar-card">
-            <h3>Quality & Compliance</h3>
-            <p>Layered QC, fabric testing, needle policy, and compliant facilities ensure every unit meets buyer
-              standards.</p>
-          </div>
-          <div class="pillar-card">
-            <h3>Speed & Flexibility</h3>
-            <p>Low MOQs, agile lines, and clear milestones keep capsules, pilots, and replenishment on schedule.</p>
-          </div>
-        </div>
-      </div>
-      <div class="content-right">
-        <img src="images/whychooseus.png" alt="Why Selvyna Atelier" class="section-image">
-      </div>
-    </div>
-  </section>
+        <h2>Why Choose Bangladesh for Waffle Tunics?</h2>
+        <ul>
+            <li><strong>Knit Capability:</strong> Experienced in textured knit's and coverstitch.</li>
+            <li><strong>Cost Efficiency:</strong> Competitive FOB on lounge knit's.</li>
+            <li><strong>Quick Iterations:</strong> Fast sampling on neck and hem variations.</li>
+            <li><strong>Compliance Ready:</strong> Audited factories with soft-hand finishes.</li>
+        </ul>
+    </section>
 
-  <section class="catalogs-section">
-    <div class="catalogs-container">
-      <h2 class="section-title centered-title">How We Work</h2>
-      <ul class="process-list">
-        <li>Creative brief, market references, and target cost alignment.</li>
-        <li>Fabric/trim sourcing, lab dips, and strike-off approvals.</li>
-        <li>Pattern, grading, and fit'samples with iterative feedback.</li>
-        <li>PP sample sign-off with sealed specs and packaging instructions.</li>
-        <li>Inline QC and final AQL inspection before shipment.</li>
-        <li>Labeling, barcoding, and FBA-ready prep or retail pack-out.</li>
-      </ul>
-    </div>
-  </section>
+        <footer>
+        <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
+        <div class="sitename-footer">Selvyna Atelier</div>
+        <div class="copyright">Copyright &copy; 2026 <a href="index.html">Selvyna Atelier</a></div>
+    </footer>
 
-  <section class="contact-form-section">
-    <div class="contact-container">
-      <div class="cta-panel">
-        <div>
-          <h3>Ready to start your next collection?</h3>
-          <p>Share your tech packs or ideas—we will advise on fabrics, MOQ, and timelines.</p>
-        </div>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
-    <div class="sitename-footer">Selvyna Atelier</div>
-    <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
-  </footer>
-
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+

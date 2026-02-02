@@ -39,8 +39,9 @@ header {
 }
 
 .logo {
+  width: 50px;
   height: 50px;
-  width: auto;
+  aspect-ratio: 1 / 1;
 }
 
 /* HAMBURGER BUTTON (Hidden on Desktop) */
@@ -117,7 +118,9 @@ header {
     font-size: 24px;
   }
   .logo {
+    width: 40px;
     height: 40px;
+    aspect-ratio: 1 / 1;
   }
 
   /* Mobile Menu Logic */
@@ -173,21 +176,31 @@ header {
   text-align: center;
   padding: 0 20px;
 
-  /* Background Image - Progressive Enhancement with Fallbacks */
+  /* Background Image fallback (PNG for non-supporting browsers) */
   background-image: url("images/herobg.png");
-  background-image: -webkit-image-set(
-    url("images/herobg-1280.webp") 1x,
-    url("images/herobg-1920.webp") 2x
-  );
-  background-image: image-set(
-    url("images/herobg-1280.avif") type("image/avif") 1x,
-    url("images/herobg-1920.avif") type("image/avif") 2x,
-    url("images/herobg-1280.webp") type("image/webp") 1x,
-    url("images/herobg-1920.webp") type("image/webp") 2x
-  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@supports (background-image: image-set(url("images/herobg-1280.avif") type("image/avif") 1x)) {
+  .hero-section {
+    background-image: image-set(
+      url("images/herobg-1280.avif") type("image/avif") 1x,
+      url("images/herobg-1920.avif") type("image/avif") 2x,
+      url("images/herobg-1280.webp") type("image/webp") 1x,
+      url("images/herobg-1920.webp") type("image/webp") 2x
+    );
+  }
+}
+
+@supports (background-image: -webkit-image-set(url("images/herobg-1280.webp") 1x)) {
+  .hero-section {
+    background-image: -webkit-image-set(
+      url("images/herobg-1280.webp") 1x,
+      url("images/herobg-1920.webp") 2x
+    );
+  }
 }
 
 .hero-content {
@@ -251,18 +264,8 @@ header {
    STATISTICS BAR 
    ======================== */
 .stats-bar {
-  /* Direct image link with Progressive Enhancement */
+  /* Direct image link fallback (PNG for non-supporting browsers) */
   background-image: url("images/statusbar.png");
-  background-image: -webkit-image-set(
-    url("images/statusbar-1200.webp") 1x,
-    url("images/statusbar-1600.webp") 2x
-  );
-  background-image: image-set(
-    url("images/statusbar-1200.avif") type("image/avif") 1x,
-    url("images/statusbar-1600.avif") type("image/avif") 2x,
-    url("images/statusbar-1200.webp") type("image/webp") 1x,
-    url("images/statusbar-1600.webp") type("image/webp") 2x
-  );
 
   /* Standard background settings */
   background-size: cover;
@@ -272,6 +275,26 @@ header {
   /* Existing spacing */
   padding: 60px 20px;
   border-bottom: 1px solid #dcdcdc;
+}
+
+@supports (background-image: image-set(url("images/statusbar-1200.avif") type("image/avif") 1x)) {
+  .stats-bar {
+    background-image: image-set(
+      url("images/statusbar-1200.avif") type("image/avif") 1x,
+      url("images/statusbar-1600.avif") type("image/avif") 2x,
+      url("images/statusbar-1200.webp") type("image/webp") 1x,
+      url("images/statusbar-1600.webp") type("image/webp") 2x
+    );
+  }
+}
+
+@supports (background-image: -webkit-image-set(url("images/statusbar-1200.webp") 1x)) {
+  .stats-bar {
+    background-image: -webkit-image-set(
+      url("images/statusbar-1200.webp") 1x,
+      url("images/statusbar-1600.webp") 2x
+    );
+  }
 }
 
 .stats-container {

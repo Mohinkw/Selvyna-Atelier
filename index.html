@@ -7,13 +7,31 @@
   <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
   <title>Selvyna Atelier: Women's Clothing Manufacturer in Bangladesh</title>
   <meta name="description" content="Premium women's clothing manufacturer in Bangladesh. Custom private label apparel, low MOQ production, ethical manufacturing, and Amazon FBA solutions. Direct factory pricing.">
-  <link href="style.css" rel="stylesheet">
+  <link rel="preload" href="images/herobg.png" as="image" fetchpriority="high">
+  <link rel="preload" href="style.css" as="style">
+  <style>
+    body { background-color: #ffffff; color: #333333; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #ffffff; border-bottom: 1px solid #eee; position: relative; flex-wrap: wrap; }
+    .sitename { display: flex; align-items: center; gap: 16px; }
+    .sitename a { text-decoration: none; font-size: 32px; font-weight: 700; letter-spacing: 1px; color: #6e0a1e; }
+    .logo { height: 50px; width: auto; }
+    .menu { background: #f5f5f5; padding: 14px 28px; border-radius: 12px; }
+    .menu ul { list-style: none; display: flex; gap: 32px; }
+    .menu a { text-decoration: none; font-size: 18px; font-weight: 600; color: #333; }
+    .hero-section { position: relative; width: 100%; min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; background-image: url("images/herobg.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+    .hero-content { max-width: 900px; padding: 20px; }
+    .hero-content h1 { font-size: 56px; font-weight: 700; color: #6e0a1e; margin-bottom: 24px; letter-spacing: -1px; }
+    .hero-content p { font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 40px; font-weight: 500; }
+    .cta-button { display: inline-block; background-color: #2e3440; color: #ffffff; padding: 16px 42px; border-radius: 50px; font-size: 18px; font-weight: 600; text-decoration: none; }
+  </style>
+  <link href="style.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="style.css" rel="stylesheet"></noscript>
 </head>
 
 <body>
   <header>
     <div class="sitename">
-      <img src="images/Logo.png" alt="Selvyna Atelier" class="logo">
+      <img src="images/Logo.png" alt="Selvyna Atelier" class="logo" decoding="async">
       <a href="index.html">Selvyna Atelier</a>
     </div>
 
@@ -106,7 +124,7 @@
       </div>
 
       <div class="content-right">
-        <img src="images/services.png" alt="Our Services Icons" class="section-image">
+        <img src="images/services.png" alt="Our Services Icons" class="section-image" loading="lazy" decoding="async">
       </div>
 
     </div>
@@ -131,7 +149,7 @@
       </div>
 
       <div class="content-right">
-        <img src="images/whychooseus.png" alt="Why Choose Us Icons" class="section-image">
+        <img src="images/whychooseus.png" alt="Why Choose Us Icons" class="section-image" loading="lazy" decoding="async">
       </div>
 
     </div>
@@ -145,35 +163,35 @@
   
         <div class="catalog-item">
           <a href="dresses.html">
-            <img src="images/Catalogs/Dresses.webp" alt="Dresses">
+            <img src="images/Catalogs/Dresses.webp" alt="Dresses" loading="lazy" decoding="async">
           </a>
           <h3><a href="dresses.html">Dresses</a></h3>
         </div>
 
         <div class="catalog-item">
           <a href="Tops-Tees-Blouses.html">
-            <img src="images/Catalogs/Tops, Tees & Blouses.webp" alt="Tops, Tees & Blouses">
+            <img src="images/Catalogs/Tops, Tees & Blouses.webp" alt="Tops, Tees & Blouses" loading="lazy" decoding="async">
           </a>
           <h3><a href="Tops-Tees-Blouses.html">Tops, Tees & Blouses</a></h3>
         </div>
 
         <div class="catalog-item">
           <a href="sweaters.html">
-            <img src="images/Catalogs/Sweaters.webp" alt="Sweaters">
+            <img src="images/Catalogs/Sweaters.webp" alt="Sweaters" loading="lazy" decoding="async">
           </a>
           <h3><a href="sweaters.html">Sweaters</a></h3>
         </div>
 
         <div class="catalog-item">
           <a href="Fashion-Hoodies-Sweatshirts.html">
-            <img src="images/Catalogs/Fashion Hoodies & Sweatshirts.webp" alt="Hoodies & Sweatshirts">
+            <img src="images/Catalogs/Fashion Hoodies & Sweatshirts.webp" alt="Hoodies & Sweatshirts" loading="lazy" decoding="async">
           </a>
           <h3><a href="Fashion-Hoodies-Sweatshirts.html">Fashion Hoodies & Sweatshirts</a></h3>
         </div>
 
         <div class="catalog-item">
           <a href="jeans.html">
-            <img src="images/Catalogs/Jeans.webp" alt="Jeans">
+            <img src="images/Catalogs/Jeans.webp" alt="Jeans" loading="lazy" decoding="async">
           </a>
           <h3><a href="jeans.html">Jeans</a></h3>
         </div>
@@ -192,18 +210,18 @@
 
     <div class="scroller-viewport">
       <div class="scroller-track">
-        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo">
-        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo">
-        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo">
-        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo">
-        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo">
-        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo">
-        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo">
-        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo">
-        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo">
-        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo">
-        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo">
-        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo">
+        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -213,18 +231,18 @@
 
     <div class="scroller-viewport">
       <div class="scroller-track">
-        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo">
-        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo">
-        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo">
-        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo">
-        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo">
-        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo">
-        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo">
-        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo">
-        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo">
-        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo">
-        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo">
-        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo">
+        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -233,42 +251,42 @@
     <div class="testimonial-container">
 
       <div class="testimonial-slide active">
-        <img src="images/Managers/Sarah Jenkins.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/Sarah Jenkins.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"Selvyna Atelier has been a vital partner in our supply chain. Their attention to ethical production and premium garment quality is world-class."</p>
         <h4 class="client-name">Sarah Jenkins</h4>
         <p class="client-company">Marks & Spencer</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/David Miller.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/David Miller.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"Their ability to handle complex tech packs and deliver consistent sizing across large volumes has helped us scale our seasonal lines effortlessly."</p>
         <h4 class="client-name">David Miller</h4>
         <p class="client-company">Kohl's</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Alex Turner.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/Alex Turner.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"Exceptional fabric sourcing and on-time delivery. Selvyna Atelier truly understands the fast-paced nature of the modern retail market."</p>
         <h4 class="client-name">Alex Turner</h4>
         <p class="client-company">Matalan</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Hans Schmidt.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/Hans Schmidt.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"The best low-MOQ manufacturer we have worked with in Bangladesh. Their communication and transparency throughout the production process are excellent."</p>
         <h4 class="client-name">Hans Schmidt</h4>
         <p class="client-company">KiK</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Elena Rodriguez.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/Elena Rodriguez.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"Partnering with Selvyna Atelier allowed our private label to offer premium quality at factory-direct pricing. A total game changer for our brand."</p>
         <h4 class="client-name">Elena Rodriguez</h4>
         <p class="client-company">Global Fashion Sourcing</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/James Carter.webp" alt="Partner" class="client-avatar">
+        <img src="images/Managers/James Carter.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
         <p class="testimonial-text">"The Amazon FBA-ready prep and logistics services saved us weeks of work. They are a complete end-to-end solution for apparel brands."</p>
         <h4 class="client-name">James Carter</h4>
         <p class="client-company">Retail Direct Ltd</p>
@@ -319,7 +337,7 @@
     <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>

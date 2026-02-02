@@ -7,8 +7,12 @@
   <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
   <title>Selvyna Atelier: Women's Clothing Manufacturer in Bangladesh</title>
   <meta name="description" content="Premium women's clothing manufacturer in Bangladesh. Custom private label apparel, low MOQ production, ethical manufacturing, and Amazon FBA solutions. Direct factory pricing.">
-  <link rel="preload" href="images/herobg.avif" as="image" type="image/avif" fetchpriority="high">
-  <link rel="preload" href="images/herobg.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" fetchpriority="high"
+    imagesrcset="images/herobg-1280.avif 1280w, images/herobg-1920.avif 1920w"
+    imagesizes="100vw" type="image/avif">
+  <link rel="preload" as="image" fetchpriority="high"
+    imagesrcset="images/herobg-1280.webp 1280w, images/herobg-1920.webp 1920w"
+    imagesizes="100vw" type="image/webp">
   <link rel="preload" href="images/herobg.png" as="image" type="image/png" fetchpriority="high">
   <link rel="preload" href="style.css" as="style">
   <style>
@@ -20,7 +24,13 @@
     .menu { background: #f5f5f5; padding: 14px 28px; border-radius: 12px; }
     .menu ul { list-style: none; display: flex; gap: 32px; }
     .menu a { text-decoration: none; font-size: 18px; font-weight: 600; color: #333; }
-    .hero-section { position: relative; width: 100%; min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; background-image: url("images/herobg.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+    .hero-section { position: relative; width: 100%; min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; background-image: image-set(
+      url("images/herobg-1280.avif") type("image/avif"),
+      url("images/herobg-1920.avif") type("image/avif"),
+      url("images/herobg-1280.webp") type("image/webp"),
+      url("images/herobg-1920.webp") type("image/webp"),
+      url("images/herobg.png") type("image/png")
+    ); background-size: cover; background-position: center; background-repeat: no-repeat; }
     .hero-content { max-width: 900px; padding: 20px; }
     .hero-content h1 { font-size: 56px; font-weight: 700; color: #6e0a1e; margin-bottom: 24px; letter-spacing: -1px; }
     .hero-content p { font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 40px; font-weight: 500; }
@@ -34,8 +44,8 @@
   <header>
     <div class="sitename">
       <picture>
-        <source srcset="images/Logo.avif" type="image/avif">
-        <source srcset="images/Logo.webp" type="image/webp">
+        <source srcset="images/Logo-100.avif 100w, images/Logo.avif 500w" sizes="50px" type="image/avif">
+        <source srcset="images/Logo-100.webp 100w, images/Logo.webp 500w" sizes="50px" type="image/webp">
         <img src="images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async">
       </picture>
       <a href="index.html">Selvyna Atelier</a>
@@ -129,8 +139,8 @@
 
       <div class="content-right">
         <picture>
-          <source srcset="images/services.avif" type="image/avif">
-          <source srcset="images/services.webp" type="image/webp">
+          <source srcset="images/services-700.avif 700w, images/services.avif 1100w" sizes="(max-width: 900px) 90vw, 651px" type="image/avif">
+          <source srcset="images/services-700.webp 700w, images/services.webp 1100w" sizes="(max-width: 900px) 90vw, 651px" type="image/webp">
           <img src="images/services.png" alt="Our Services Icons" class="section-image" width="1100" height="720" loading="lazy" decoding="async">
         </picture>
       </div>
@@ -158,8 +168,8 @@
 
       <div class="content-right">
         <picture>
-          <source srcset="images/whychooseus.avif" type="image/avif">
-          <source srcset="images/whychooseus.webp" type="image/webp">
+          <source srcset="images/whychooseus-700.avif 700w, images/whychooseus.avif 1100w" sizes="(max-width: 900px) 90vw, 651px" type="image/avif">
+          <source srcset="images/whychooseus-700.webp 700w, images/whychooseus.webp 1100w" sizes="(max-width: 900px) 90vw, 651px" type="image/webp">
           <img src="images/whychooseus.png" alt="Why Choose Us Icons" class="section-image" width="1100" height="720" loading="lazy" decoding="async">
         </picture>
       </div>
@@ -222,18 +232,18 @@
 
     <div class="scroller-viewport">
       <div class="scroller-track">
-        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/ISO-160.webp 160w, images/Certificates & Partners/ISO.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/OEKO TEX-160.webp 160w, images/Certificates & Partners/OEKO TEX.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/BSCI-160.webp 160w, images/Certificates & Partners/BSCI.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/GOTS-160.webp 160w, images/Certificates & Partners/GOTS.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Sedex-160.webp 160w, images/Certificates & Partners/Sedex.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/BGMEA-160.webp 160w, images/Certificates & Partners/BGMEA.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/ISO.webp" alt="ISO 9001" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/ISO-160.webp 160w, images/Certificates & Partners/ISO.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/OEKO TEX.webp" alt="OEKO-TEX" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/OEKO TEX-160.webp 160w, images/Certificates & Partners/OEKO TEX.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/BSCI.webp" alt="Amfori BSCI" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/BSCI-160.webp 160w, images/Certificates & Partners/BSCI.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/GOTS.webp" alt="GOTS" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/GOTS-160.webp 160w, images/Certificates & Partners/GOTS.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Sedex.webp" alt="Sedex" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Sedex-160.webp 160w, images/Certificates & Partners/Sedex.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/BGMEA.webp" alt="BGMEA" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/BGMEA-160.webp 160w, images/Certificates & Partners/BGMEA.webp 800w" sizes="140px">
       </div>
     </div>
   </section>
@@ -243,18 +253,18 @@
 
     <div class="scroller-viewport">
       <div class="scroller-track">
-        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async">
-        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async">
+        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/KOHLS-160.webp 160w, images/Certificates & Partners/KOHLS.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/GYMBOREE-160.webp 160w, images/Certificates & Partners/GYMBOREE.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/KIK-160.webp 160w, images/Certificates & Partners/KIK.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/MATALAN-160.webp 160w, images/Certificates & Partners/MATALAN.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Marks & Spencer-160.webp 160w, images/Certificates & Partners/Marks & Spencer.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Mango-160.webp 160w, images/Certificates & Partners/Mango.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/KOHLS.webp" alt="Kohls" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/KOHLS-160.webp 160w, images/Certificates & Partners/KOHLS.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/GYMBOREE.webp" alt="Gymboree" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/GYMBOREE-160.webp 160w, images/Certificates & Partners/GYMBOREE.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/KIK.webp" alt="Kik" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/KIK-160.webp 160w, images/Certificates & Partners/KIK.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/MATALAN.webp" alt="Matalan" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/MATALAN-160.webp 160w, images/Certificates & Partners/MATALAN.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Marks & Spencer.webp" alt="Marks & Spencer" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Marks & Spencer-160.webp 160w, images/Certificates & Partners/Marks & Spencer.webp 800w" sizes="140px">
+        <img src="images/Certificates & Partners/Mango.webp" alt="Mango" class="ticker-logo" loading="lazy" decoding="async" width="140" height="105" srcset="images/Certificates & Partners/Mango-160.webp 160w, images/Certificates & Partners/Mango.webp 800w" sizes="140px">
       </div>
     </div>
   </section>
@@ -263,42 +273,42 @@
     <div class="testimonial-container">
 
       <div class="testimonial-slide active">
-        <img src="images/Managers/Sarah Jenkins.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/Sarah Jenkins.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/Sarah Jenkins-160.webp 160w, images/Managers/Sarah Jenkins.webp 500w" sizes="130px">
         <p class="testimonial-text">"Selvyna Atelier has been a vital partner in our supply chain. Their attention to ethical production and premium garment quality is world-class."</p>
         <h4 class="client-name">Sarah Jenkins</h4>
         <p class="client-company">Marks & Spencer</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/David Miller.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/David Miller.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/David Miller-160.webp 160w, images/Managers/David Miller.webp 500w" sizes="130px">
         <p class="testimonial-text">"Their ability to handle complex tech packs and deliver consistent sizing across large volumes has helped us scale our seasonal lines effortlessly."</p>
         <h4 class="client-name">David Miller</h4>
         <p class="client-company">Kohl's</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Alex Turner.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/Alex Turner.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/Alex Turner-160.webp 160w, images/Managers/Alex Turner.webp 500w" sizes="130px">
         <p class="testimonial-text">"Exceptional fabric sourcing and on-time delivery. Selvyna Atelier truly understands the fast-paced nature of the modern retail market."</p>
         <h4 class="client-name">Alex Turner</h4>
         <p class="client-company">Matalan</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Hans Schmidt.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/Hans Schmidt.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/Hans Schmidt-160.webp 160w, images/Managers/Hans Schmidt.webp 500w" sizes="130px">
         <p class="testimonial-text">"The best low-MOQ manufacturer we have worked with in Bangladesh. Their communication and transparency throughout the production process are excellent."</p>
         <h4 class="client-name">Hans Schmidt</h4>
         <p class="client-company">KiK</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/Elena Rodriguez.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/Elena Rodriguez.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/Elena Rodriguez-160.webp 160w, images/Managers/Elena Rodriguez.webp 500w" sizes="130px">
         <p class="testimonial-text">"Partnering with Selvyna Atelier allowed our private label to offer premium quality at factory-direct pricing. A total game changer for our brand."</p>
         <h4 class="client-name">Elena Rodriguez</h4>
         <p class="client-company">Global Fashion Sourcing</p>
       </div>
 
       <div class="testimonial-slide">
-        <img src="images/Managers/James Carter.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async">
+        <img src="images/Managers/James Carter.webp" alt="Partner" class="client-avatar" loading="lazy" decoding="async" width="130" height="130" srcset="images/Managers/James Carter-160.webp 160w, images/Managers/James Carter.webp 500w" sizes="130px">
         <p class="testimonial-text">"The Amazon FBA-ready prep and logistics services saved us weeks of work. They are a complete end-to-end solution for apparel brands."</p>
         <h4 class="client-name">James Carter</h4>
         <p class="client-company">Retail Direct Ltd</p>

@@ -152,9 +152,11 @@ header {
 
   /* Background Image */
   background-image: image-set(
-    url("images/herobg.avif") type("image/avif"),
-    url("images/herobg.webp") type("image/webp"),
-    url("images/herobg.png") type("image/png")
+    url("images/herobg-1280.avif") type("image/avif") 1x,
+    url("images/herobg-1920.avif") type("image/avif") 2x,
+    url("images/herobg-1280.webp") type("image/webp") 1x,
+    url("images/herobg-1920.webp") type("image/webp") 2x,
+    url("images/herobg.png") type("image/png") 1x
   );
   background-size: cover;
   background-position: center;
@@ -224,9 +226,11 @@ header {
 .stats-bar {
   /* Direct image link - No overlay */
   background-image: image-set(
-    url("images/statusbar.avif") type("image/avif"),
-    url("images/statusbar.webp") type("image/webp"),
-    url("images/statusbar.png") type("image/png")
+    url("images/statusbar-1200.avif") type("image/avif") 1x,
+    url("images/statusbar-1600.avif") type("image/avif") 2x,
+    url("images/statusbar-1200.webp") type("image/webp") 1x,
+    url("images/statusbar-1600.webp") type("image/webp") 2x,
+    url("images/statusbar.png") type("image/png") 1x
   );
 
   /* Standard background settings */

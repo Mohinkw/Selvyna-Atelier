@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com;">
     <title>Amazon FBA Clothing Strategy: From Bangladesh Factory to Amazon Warehouse | Selvyna Atelier</title>
-  <meta name="description" content="Learn the complete strategy for Amazon FBA clothing sourcing from Bangladesh. Tips on manufacturing, logistics, and scaling your fashion business.">
+    <meta name="description"
+        content="Learn the complete strategy for Amazon FBA clothing sourcing from Bangladesh. Tips on manufacturing, logistics, and scaling your fashion business.">
     <link rel="stylesheet" href="../style.css">
     <style>
         .blog-hero {
@@ -34,12 +35,18 @@
             max-width: 900px;
             margin: 16px auto 0;
             aspect-ratio: 16 / 9;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             border: 1px solid #e6e6e6;
             border-radius: 8px;
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            display: block;
+        }
+
+        .blog-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .blog-body {
@@ -92,7 +99,12 @@
 <body>
     <header>
         <div class="sitename">
-            <picture><source type="image/avif" srcset="../images/Logo-100.avif 1x, ../images/Logo.avif 2x"><source type="image/webp" srcset="../images/Logo-100.webp 1x, ../images/Logo.webp 2x"><img src="../images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500" decoding="async"></picture>
+            <picture>
+                <source type="image/avif" srcset="../images/Logo-100.avif 1x, ../images/Logo.avif 2x">
+                <source type="image/webp" srcset="../images/Logo-100.webp 1x, ../images/Logo.webp 2x"><img
+                    src="../images/Logo.png" alt="Selvyna Atelier" class="logo" width="500" height="500"
+                    decoding="async">
+            </picture>
             <a href="../index.html">Selvyna Atelier</a>
         </div>
         <button class="hamburger" id="hamburger-btn">
@@ -115,9 +127,12 @@
 
     <section class="blog-hero">
         <h1>Amazon FBA Clothing Strategy: From Bangladesh Factory to Amazon Warehouse in 2026</h1>
-        <div class="blog-hero-image" role="img" aria-label="Amazon FBA shipping boxes with barcode labels"
-            style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80');">
-        </div>
+        <picture class="blog-hero-image">
+            <source type="image/avif" srcset="Images/11.avif">
+            <source type="image/webp" srcset="Images/11.webp">
+            <img src="Images/11.png" alt="Amazon FBA shipping boxes with barcode labels" loading="lazy"
+                decoding="async">
+        </picture>
         <p>Launch your Amazon clothing brand with FBA-ready production from Bangladesh. Learn how to manufacture, label,
             and ship compliant garments straight to Amazon fulfillment centers while maximizing margins.</p>
     </section>
@@ -256,9 +271,9 @@
     </article>
 
     <footer>
-        <div class="privacy-policy"><a href="../privacy-policy.html">Privacy Policy</a></div>
+        <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
         <div class="sitename-footer">Selvyna Atelier</div>
-        <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
+        <div class="copyright">Copyright &copy; 2026 <a href="/index.html">Selvyna Atelier</a></div>
     </footer>
     <script src="../script.js" defer></script>
 </body>

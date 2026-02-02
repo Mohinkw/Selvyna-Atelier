@@ -11,7 +11,8 @@
     .blog-hero { background:#ffffff; border-bottom:1px solid #f0f0f0; padding:70px 20px; text-align:center; }
     .blog-hero h1 { color:#6e0a1e; font-size:38px; margin-bottom:12px; }
     .blog-hero p { color:#555; max-width:900px; margin:0 auto; line-height:1.8; }
-    .blog-hero-image { width:100%; max-width:900px; margin:16px auto 0; aspect-ratio:16 / 9; background-size:cover; background-position:center; background-repeat:no-repeat; border:1px solid #e6e6e6; border-radius:8px; box-shadow:0 10px 24px rgba(0,0,0,0.04); }
+    .blog-hero-image { width:100%; max-width:900px; margin:16px auto 0; aspect-ratio:16 / 9; border:1px solid #e6e6e6; border-radius:8px; box-shadow:0 10px 24px rgba(0,0,0,0.04); overflow:hidden; display:block; }
+    .blog-hero-image img { width:100%; height:100%; object-fit:cover; display:block; }
     .blog-body { max-width:1100px; margin:0 auto; padding:50px 20px 70px; color:#333; line-height:1.8; }
     .blog-body h2 { color:#6e0a1e; margin:28px 0 12px; }
     .blog-body h3 { color:#8a1f35; margin:20px 0 10px; font-size:20px; }
@@ -42,7 +43,11 @@
 
   <section class="blog-hero">
     <h1>How to Start a Clothing Brand in 2026: The Ultimate Comprehensive Guide</h1>
-    <div class="blog-hero-image" role="img" aria-label="Designer planning a clothing collection" style="background-image:url('../images/Services/Design%20%26%20Pre-Production.webp');"></div>
+    <picture class="blog-hero-image">
+      <source type="image/avif" srcset="Images/1.avif">
+      <source type="image/webp" srcset="Images/1.webp">
+      <img src="Images/1.png" alt="Designer planning a clothing collection" loading="lazy" decoding="async">
+    </picture>
     <p>The dream is more accessible than ever, but 2026 brands win on technical execution—tight supply chains, transparent ethics, and Bangladesh partners who handle low-MOQ through scale.</p>
   </section>
 
@@ -206,10 +211,10 @@
   </article>
 
   <footer>
-    <div class="privacy-policy"><a href="../privacy-policy.html">Privacy Policy</a></div>
-    <div class="sitename-footer">Selvyna Atelier</div>
-    <div class="copyright">Copyright &copy; 2026 Selvyna Atelier</div>
-  </footer>
+        <div class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></div>
+        <div class="sitename-footer">Selvyna Atelier</div>
+        <div class="copyright">Copyright &copy; 2026 <a href="/index.html">Selvyna Atelier</a></div>
+    </footer>
   <script src="../script.js" defer></script>
 </body>
 </html>

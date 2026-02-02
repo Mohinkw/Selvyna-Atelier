@@ -1,0 +1,19 @@
+# Utility Scripts (Local Development Only)
+*.ps1
+*.py
+__pycache__/
+*.pyc
+
+# VS Code Settings
+.vscode/
+
+# System Files
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Optional: Uncomment if you don't want to deploy wrangler config
+# wrangler.jsonc
